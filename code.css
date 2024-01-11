@@ -1,293 +1,346 @@
-/* Add your CSS styles here */
 body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-        background: #ffffff;
-        color: #020202;
-        padding: 10px 0;
+    background: #ffffff;
+    color: #020202;
+    padding: 10px 0;
 }
 
-nav ul {
-        list-style-type: none;
-        padding: 20px;
-        text-align: right;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
 }
 
-nav ul li {
-        display: inline;
-        margin-right: 20px;
+.navbar-brand img {
+    height: 40px;
 }
 
-nav ul li a {
-        color: #000000;
-        text-decoration: none;
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .navbar-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #fff;
+    }
 }
 
+.navbar-links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(164, 111, 13);
+    transition: width 0.5s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+.search {
+    padding-left: 10px;
+}
 .banner {
-        background: url("/images/banner.jpeg") no-repeat center center;
-        background-size: cover;
-        color: #fff;
-        padding: 100px 0;
-        text-align: center;
+    background: url("/images/banner.jpeg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
 }
 
 #about {
-        padding: 50px 20px;
-        background: #f8f8f8;
+    padding: 50px 20px;
+    background: #f8f8f8;
 }
-/* Add your CSS styles here */
-body,
+
 h1,
 p {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        max-width: 1850px; 
-        margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1850px;
+    margin: auto;
 }
 
 .text-section {
-        flex-basis: 50%; 
-        padding: 40px; 
-        text-align: left;
+    flex-basis: 50%;
+    padding: 40px;
+    text-align: left;
 }
 
 .underline {
-        width: 50px; 
-        height: 4px; 
-        background-color: #000; 
-        margin-bottom: 20px;
+    width: 50px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 20px;
 }
 
 button {
-        background-color: rgb(129, 87, 8);
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        text-transform: uppercase;
+    background-color: rgb(129, 87, 8);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 button:hover {
-        background-color: #444;
+    background-color: #444;
 }
 
 .image-section {
-        flex-basis: 50%; 
-        text-align: right; }
+    flex-basis: 50%;
+    text-align: right;
+}
 
 .image-section img {
-        max-width: 100%;
-        height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Add responsive design */
 @media (max-width: 1200px) {
-        .container {
-                flex-direction: column;
-                align-items: stretch;
-        }
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-        .text-section,
-        .image-section {
-                flex-basis: 100%;
-        }
+    .text-section,
+    .image-section {
+        flex-basis: 100%;
+    }
 
-        .image-section {
-                order: -1; 
-        }
+    .image-section {
+        order: -1;
+    }
 }
 
-/* Further media queries can be added to adjust for smaller screens */
-
 .services-container {
-        display: flex;
-        width: 100%;
-        height: auto; 
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .service-description {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        background: #fff; 
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
 }
 
 .service-image {
-        width: 40%; 
-        height: auto;
-        margin-right: 20px;
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
 }
 
 .text-content h1 {
-        margin-bottom: 10px;
-        
+    margin-bottom: 10px;
 }
 
 .text-content p {
-        margin-bottom: 20px;
-        
+    margin-bottom: 20px;
 }
 
 .what-we-do {
-        flex: 1;
-        padding: 20px;
-        color: #fff; /* Text color */
-        background-size: cover;
-        background-position: center;
+    flex: 1;
+    padding: 20px;
+    color: #fff; 
+    background-size: cover;
+    background-position: center;
 }
 
 .what-we-do h2 {
-        margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .what-we-do ul {
-        list-style-type: none;
-        padding: 0;
-        /* Style your list */
+    list-style-type: none;
+    padding: 0;
 }
 
 .what-we-do ul li {
-        margin-bottom: 5px;
-        
+    margin-bottom: 5px;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 300px; 
+    height: 200px; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.caption {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+    transition:
+        transform 0.5s,
+        opacity 0.5s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.gallery-item:hover .caption {
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 /* Add responsive design */
 @media (max-width: 768px) {
-        .services-container {
-                flex-direction: column;
-        }
-
-        .service-image {
-                width: 100%; /* Full width on smaller screens */
-        }
-}
-.projects-section {
-        background-color: #e4ab3f; 
-        text-align: left; 
-        padding: 30px 15px; 
-        color: #fff;
-    }
-    
-    .projects-section h5 {
-        margin-bottom: 10px; 
-    }
-    
-    .projects-section hr {
-        width: 10%; 
-        border: none;
-        height: 4px; 
-        background-color: black; /* Line color */
-        margin: 0 auto; 
-        margin-bottom: 20px; /* Space below the line */
-    }
-    
-    .gallery {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; 
-        padding: 0 10px; 
-    }
-    
-    .gallery-item {
-        margin: 10px; /* Space around each gallery item */
-        position: relative; /* Position relative to the caption */
-    }
-    
-    .gallery-item img {
-        width: 100%; 
-        height: auto;
-        max-width: 300px; 
-    }
-    
-    .caption {
-        position: absolute;
-        bottom: 10px; 
-        left: 50%;
-        transform: translateX(-50%); /* Center the caption */
-        background-color: #000; /* Caption background color */
-        color: #fff; /* Caption text color */
-        padding: 5px 10px; 
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .gallery-item {
-            width: 48%; 
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .gallery-item {
-            width: 100%; /* One image per row on very small screens */
-        }
-    }
-
-    .contact-section {
-        display: flex;
-        width: 100%;
-    }
-    
-    .contact-image {
-        flex: 1;
-      
-        background: url('/images/contactus.jpg') no-repeat center center;
-        background-size: cover;
-        height:"400";
-        width:"700"
-        h
-    }
-    
-    .contact-form {
-        
-        flex: 1;
-        padding: 50px ;
-        background: #000000; 
-        text-align: left;
-
-    }
-    
-    .contact-form h2 {
-        margin-bottom: 30px;
-    }
-    
-    .contact-form form {
-        
-        display: flex;
+    .services-container {
         flex-direction: column;
     }
-    
-   /* Apply to all form elements */
+
+    .service-image {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+.projects-section {
+    background-color: #e4ab3f;
+    text-align: left;
+    padding: 30px 15px;
+    color: #fff;
+}
+
+.projects-section h5 {
+    margin-bottom: 10px;
+}
+
+.projects-section hr {
+    width: 10%;
+    border: none;
+    height: 4px;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.gallery-item {
+    margin: 10px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
+
+.contact-section {
+    display: flex;
+    width: 100%;
+}
+
+.contact-image {
+    flex: 1;
+
+    background: url("/images/contactus.jpg") no-repeat center center;
+    background-size: cover;
+    height: "400";
+    width: "700" h;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 50px;
+    background: #000000;
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form input[type="date"] {
-    width: 100%; 
-    padding: 5px; 
-    margin-bottom: 30px; 
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px;
     border: 1px solid rgb(250, 141, 39);
-    background-color: transparent; 
+    background-color: transparent;
     color: #fff;
-    font-size: 16px; }
+    font-size: 16px;
+}
 
 /* Placeholder styling */
 ::placeholder {
-    color: #fff; 
-    font-size: 12px; 
-    opacity: 1; }
-
+    color: #fff;
+    font-size: 12px;
+    opacity: 1;
+}
 
 ::-webkit-input-placeholder {
     font-size: 12px;
@@ -299,114 +352,111 @@ form input[type="date"] {
     color: #fff;
 }
 
-/* Style the submit button */
 form button[type="submit"] {
     padding: 15px;
     width: 100%;
     border: none;
-    background-color: #ff8c00; /* Adjust button background color */
-    color: #fff; 
-    font-size: 16px; 
-    cursor: pointer; 
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 form button[type="submit"]:hover {
-    background-color: #e67e00; /* Darker shade for hover effect */
+    background-color: #e67e00;
 }
 
-/* You might need to adjust colors, font sizes, and padding to exactly match the design */
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .contact-section {
-            flex-direction: column;
-        }
-    
-        .contact-image {
-            height: 200px; /* Fixed height or percentage based on preference */
-        }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
     }
 
+    .contact-image {
+        height: 200px;
+    }
+}
+
+.site-footer {
+    background-color: #141212;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer-about,
+.footer-services,
+.footer-links,
+.footer-newsletter {
+    flex: 1;
+    padding: 0 20px;
+}
+.svg {
+    padding: 5px;
+}
+.footer-logo {
+    width: 200px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.site-footer h5 {
+    margin-bottom: 10px;
+    color: #ffffff; /* Golden color for titles */
+}
+
+.site-footer p,
+.site-footer ul {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.site-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.site-footer li {
+    margin-bottom: 5px;
+}
+
+.site-footer form {
+    margin-top: 10px;
+}
+
+.site-footer input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: calc(100% - 20px);
+}
+
+.site-footer button {
+    background-color: #ffd700; /* Golden color for button */
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.site-footer button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
     .site-footer {
-        background-color: #141212;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        padding:  50px ;
+        flex-direction: column;
     }
-    
+
     .footer-about,
     .footer-services,
     .footer-links,
     .footer-newsletter {
-        flex: 1;
-        padding: 0 20px;
+        padding: 10px 0;
+        text-align: center;
     }
-    .svg{
-        padding: 5px;
-    }
+
     .footer-logo {
-        width: 200px; /* Adjust as needed */
-        margin-bottom: 10px;
+        margin: 0 auto;
     }
-    
-    .site-footer h5 {
-        margin-bottom: 10px;
-        color: #ffffff; /* Golden color for titles */
-    }
-    
-    .site-footer p,
-    .site-footer ul {
-        font-size: 12px;
-        line-height: 1.6;
-    }
-    
-    .site-footer ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    .site-footer li {
-        margin-bottom: 5px;
-    }
-    
-    .site-footer form {
-        margin-top: 10px;
-    }
-    
-    .site-footer input[type="email"] {
-        padding: 10px;
-        margin-bottom: 10px;
-        border: none;
-        width: calc(100% - 20px); /* Adjust input width */
-    }
-    
-    .site-footer button {
-        background-color: #ffd700; /* Golden color for button */
-        color: #333;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .site-footer button:hover {
-        opacity: 0.9;
-    }
-    
-    /* Responsive layout adjustments */
-    @media (max-width: 768px) {
-        .site-footer {
-            flex-direction: column;
-        }
-    
-        .footer-about,
-        .footer-services,
-        .footer-links,
-        .footer-newsletter {
-            padding: 10px 0;
-            text-align: center; /* Center content on smaller screens */
-        }
-    
-        .footer-logo {
-            margin: 0 auto; 
-        }
-    }
+}

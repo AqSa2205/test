@@ -16,141 +16,219 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="code.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
   <body>
     <header>
-      <nav>
-        <!-- Add your navigation items here -->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <img src="/images/logo.png" alt="VF Hardwood Floors LLC" />
+        </div>
+        <div class="navbar-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/projects">Projects</a>
+          <a href="/contact">Contact</a>
+          <img class="search" src="/images/magnifying-glass-solid.svg" alt="" />
+        </div>
       </nav>
     </header>
     <main>
       <section class="banner">
         <!-- Banner content goes here -->
-        <h1 style="color: rgb(156, 109, 22);">YOU CAN CHOOSE <span><b>BEST FLOORING</b></span>  IN HERE</h1>
+        <h1 style="color: rgb(156, 109, 22)">
+          YOU CAN CHOOSE <span><b>BEST FLOORING</b></span> IN HERE
+        </h1>
         <button>Learn More</button>
       </section>
 
       <section id="about">
         <div class="container">
-                <div class="text-section">
-                    <h1>ABOUT VF <span style="color: rgb(156, 109, 22);"><b>HARDWOOD FLOOR </b></span> COMPANY</h1>
-                    <div class="underline"></div>
-                    <p>At VF Hardwood Floors, we believe that the foundation of a beautiful home or commercial space begins with the right flooring. With over 15 years of unwavering dedication and expertise in the flooring industry, we take pride in being your go-to destination for all your flooring needs.</p>
-                    <p>Founded over a decade and a half ago, VF Hardwood Floors has evolved into a premier flooring service provider, setting the standard for excellence in the industry. Our journey began with a passion for transforming spaces through quality flooring solutions. Over the years, we have honed our skills, embraced innovation, and built lasting relationships with our clients.</p>
-                    <button>Read More</button>
-                </div>
-                <div class="image-section">
-                    <img src="/images/about.jpeg" alt="Elegant living room with hardwood floors">
-                </div>
-            </div>
+          <div class="text-section">
+            <h1>
+              ABOUT VF
+              <span style="color: rgb(156, 109, 22)"
+                ><b>HARDWOOD FLOOR </b></span
+              >
+              COMPANY
+            </h1>
+            <div class="underline"></div>
+            <p>
+              At VF Hardwood Floors, we believe that the foundation of a
+              beautiful home or commercial space begins with the right flooring.
+              With over 15 years of unwavering dedication and expertise in the
+              flooring industry, we take pride in being your go-to destination
+              for all your flooring needs.
+            </p>
+            <p>
+              Founded over a decade and a half ago, VF Hardwood Floors has
+              evolved into a premier flooring service provider, setting the
+              standard for excellence in the industry. Our journey began with a
+              passion for transforming spaces through quality flooring
+              solutions. Over the years, we have honed our skills, embraced
+              innovation, and built lasting relationships with our clients.
+            </p>
+            <button>Read More</button>
+          </div>
+          <div class="image-section">
+            <img
+              src="/images/about.jpeg"
+              alt="Elegant living room with hardwood floors"
+            />
+          </div>
+        </div>
       </section>
       <section id="about">
-            <h4><b>Our Servies</b></h4>
-            <div class="services-container" >
-                
-                <div class="service-description">
-                    <img src="/images/service_2.jpeg" alt="Living Room with Hardwood Floor" class="service-image">
-                    <div class="text-content">
-                        <h1>01. Floor Repair</h1>
-                        <p>Trust VF Hardwood Floors to expertly repair and restore your damaged floors. Whether it's scratches, dents, or water damage, our skilled technicians bring years of experience to seamlessly renew the beauty of your flooring, leaving it looking flawless and rejuvenated.</p>
-                        <button>Learn More</button>
-                    </div>
-                </div>
-                <div class="what-we-do" style="background-image: url('/images/services.jpeg');">
-                    <h2>WHAT WE DO</h2>
-                    <ul>
-                        <li>01. Floor Repair</li>
-                        <li>02. Dustless Floor</li>
-                        <li>03. Floor Staining</li>
-                        <li>04. Refinishing Floor</li>
-                        <li>05. Interior Concrete</li>
-                        <li>06. Woodfloor</li>
-                    </ul>
-                </div>
+        <h4><b>Our Servies</b></h4>
+        <div class="services-container">
+          <div class="service-description">
+            <img
+              src="/images/service_2.jpeg"
+              alt="Living Room with Hardwood Floor"
+              class="service-image"
+            />
+            <div class="text-content">
+              <h1>01. Floor Repair</h1>
+              <p>
+                Trust VF Hardwood Floors to expertly repair and restore your
+                damaged floors. Whether it's scratches, dents, or water damage,
+                our skilled technicians bring years of experience to seamlessly
+                renew the beauty of your flooring, leaving it looking flawless
+                and rejuvenated.
+              </p>
+              <button>Learn More</button>
             </div>
-      </section>
-     <section class="projects-section">
-        <h5>OUR <span style="color: black;"><b>Projects</b></span></h5>
-        <hr>
-        <div class="gallery">
-            <!-- Each gallery item contains an image and a caption --> 
-            <div class="gallery-item">
-                <img src="/images/house.png" alt="Living Room">
-                <div class="caption">Bath Marble Residential</div>
-            </div>
-            <div class="gallery-item">
-                <img src="/images/bath.jpeg" alt="Living Room">
-                <div class="caption">Bath Marble Residential</div>
-            </div>
-            <div class="gallery-item">
-                <img src="/images/room.jpeg" alt="Living Room">
-                <div class="caption">Bath Marble Residential</div>
-            </div>
-           
-          
-           
+          </div>
+          <div
+            class="what-we-do"
+            style="background-image: url('/images/services.jpeg')"
+          >
+            <h2>WHAT WE DO</h2>
+            <ul>
+              <li>01. Floor Repair</li>
+              <li>02. Dustless Floor</li>
+              <li>03. Floor Staining</li>
+              <li>04. Refinishing Floor</li>
+              <li>05. Interior Concrete</li>
+              <li>06. Woodfloor</li>
+            </ul>
+          </div>
         </div>
-    </section> 
-    <section class="contact-section">
+      </section>
+      <section class="projects-section">
+        <h5>
+          OUR <span style="color: black"><b>Projects</b></span>
+        </h5>
+        <div class="underline"></div>
+        <hr />
+        <div class="gallery">
+          <!-- Each gallery item contains an image and a caption -->
+          <div class="gallery-item">
+            <img src="/images/house.png" alt="Living Room" />
+            <div class="caption">Bath Marble Residential</div>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/bath.jpeg" alt="Living Room" />
+            <div class="caption">Bath Marble Residential</div>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/room.jpeg" alt="Living Room" />
+            <div class="caption">Bath Marble Residential</div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
         <div class="contact-image">
-            <!-- Image placeholder -->
-            <img class="contact" src=""  alt="Room with a view">
+          <!-- Image placeholder -->
+          <img class="contact" src="" alt="Room with a view" />
         </div>
         <div class="contact-form">
-            <h4 style="color: aliceblue;"><b>Contact Us</b></h4>
-            <form action="submit-form.php" method="post">
-                <input type="text" id="name" name="name" placeholder="Your Name*" required>
-                <input type="text" id="looking-for" name="looking_for" placeholder="Looking for">
-                <input type="date" id="date" name="date">
-                <input type="email" id="email" name="email" placeholder="Your Email *" required>
-                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number*" required>
-                <button type="submit">Submit</button>
-            </form>
+          <h4 style="color: aliceblue"><b>Contact Us</b></h4>
+          <form action="submit-form.php" method="post">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name*"
+              required
+            />
+            <input
+              type="text"
+              id="looking-for"
+              name="looking_for"
+              placeholder="Looking for"
+            />
+            <input type="date" id="date" name="date" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email *"
+              required
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your Phone Number*"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
         </div>
-    </section>
-
-
-
+      </section>
     </main>
     <footer class="site-footer">
-        <div class="footer-about">
-            <img src="/images/footer.png" alt="VF Hardwood Floors LLC" class="footer-logo">
-            <p>When you choose VF Hardwood Floors, you're choosing a team that values quality, integrity, and customer satisfaction above all else. Join countless satisfied customers who have entrusted us with their flooring needs and discover the VF Hardwood Floors difference.</p>
-        </div>
-        <div class="footer-services">
-            <h5><b>Services</b></h5>
-            <ul>
-                <li>Floor Repair</li>
-                <li>Dustless Floor</li>
-                <li>Floor Staining</li>
-                <li>Refinishing Floor</li>
-                <li>Interior Concrete</li>
-                <li>Wood Floor</li>
-            </ul>
-        </div>
-        <div class="footer-links">
-            <h5><b>Company Links</b></h5>
-            <p><img class="svg"  src="/images/location-dot-solid.svg" > 266 Cleveland Ave Long Branch, New Jersey, 07724, United States</p>
-            <p> <img class="svg" src="/images/envelope-solid.svg" alt=""> info@vfhardwoodfloors.com</p>
-            <p> <img class="svg" src="/images/phone-solid.svg" alt=""> 732 456 9295</p>
-        </div>
-        <div class="footer-newsletter">
-            <h5><b>Newsletter</b></h5>
-            <p>Subscribe to our newsletter for latest updates about our company</p>
-            <form>
-                <input type="email" placeholder="Email Address" required>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+      <div class="footer-about">
+        <img
+          src="/images/logo.png"
+          alt="VF Hardwood Floors LLC"
+          class="footer-logo"
+        />
+        <p>
+          When you choose VF Hardwood Floors, you're choosing a team that values
+          quality, integrity, and customer satisfaction above all else. Join
+          countless satisfied customers who have entrusted us with their
+          flooring needs and discover the VF Hardwood Floors difference.
+        </p>
+      </div>
+      <div class="footer-services">
+        <h5><b>Services</b></h5>
+        <ul>
+          <li>Floor Repair</li>
+          <li>Dustless Floor</li>
+          <li>Floor Staining</li>
+          <li>Refinishing Floor</li>
+          <li>Interior Concrete</li>
+          <li>Wood Floor</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5><b>Company Links</b></h5>
+        <p>
+          <img class="svg" src="/images/location-dot-solid.svg" /> 266 Cleveland
+          Ave Long Branch, New Jersey, 07724, United States
+        </p>
+        <p>
+          <img class="svg" src="/images/envelope-solid.svg" alt="" />
+          info@vfhardwoodfloors.com
+        </p>
+        <p>
+          <img class="svg" src="/images/phone-solid.svg" alt="" /> 732 456 9295
+        </p>
+      </div>
+      <div class="footer-newsletter">
+        <h5><b>Newsletter</b></h5>
+        <p>Subscribe to our newsletter for latest updates about our company</p>
+        <form>
+          <input type="email" placeholder="Email Address" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -158,11 +236,14 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="code.js"></script>
   </body>
 </html>
